@@ -1,0 +1,49 @@
+site_name: "Documentation | SLY"
+site_author: sly.ooo
+site_description: SLY is an open source, collaborative, and friendly CLI for developing on the Internet Computer.
+site_url: https://docs.sly.ooo/
+copyright: '© 2021 Built by Fleek LLC'
+repo_name: psychedelic/sly
+repo_url: https://github.com/psychedelic/sly
+theme:
+  name: material
+  custom_dir: overrides
+  favicon: './imgs/favicon.ico'
+  logo: './imgs/logo.png'
+  font:
+    text: 'Open Sans'
+extra_css:
+  - 'stylesheets/extra.css'
+  - 'stylesheets/codehilite-theme.css'
+markdown_extensions:
+  - codehilite
+  - admonition
+  - attr_list
+  - meta
+  - toc:
+      permalink: true
+nav:
+  - Welcome to SLY 🐈: index.md
+  - <b>Getting Started 🧰</b>: "#"
+  - Installing the CLI: getting-started/installing-sly.md
+  - Setting up a Project: getting-started/workspace-management.md
+  - Creating Local Replicas: getting-started/local-replicas.md
+  - Managing Identities: getting-started/identity-management.md
+  - Interacting with Canisters: getting-started/interacting-with-canisters.md
+  - <b>Utility Tools</b> 🧰: "#"
+  - Candid Utilities: getting-started/candid-utility.md
+  - WASM Optimizer: getting-started/wasm-optimizer.md
+  - SLY Repo: "https://github.com/psychedelic/sly"
+  - <b>Resources</b> 📚:
+    - The Internet Computer: "https://dfinity.org/faq"
+    - Disclaimer: resources/disclaimer.md
+    - Trademark: resources/trademark.md
+    - Privacy: resources/privacy.md
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/psychedelic/sly/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/sly_ooo
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/yVEcEzmrgm
