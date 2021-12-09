@@ -24,7 +24,7 @@ markdown_extensions:
       permalink: true
 nav:
   - Welcome to Terabethia 👋: index.md
-  - <b>The Bridge's Testnet 🌉</b>: "#"
+  - <b>The Bridge's Testnet</b> 🌉: "#"
   - Getting Started: terabethia-testnet/getting-started.md
   - Sending Messages: terabethia-testnet/getting-started.md
   - Consuming Messages: terabethia-testnet/getting-started.md
