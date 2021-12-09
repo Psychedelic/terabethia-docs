@@ -4,22 +4,22 @@ date: "1"
 
 # Privacy Policy
 
-SLY is a seamless CLI for the Internet Computer.
+Terabethia is a bridge and communication protocol between Ethereum and the Internet Computer.
 
-Its usage **doesn’t imply in any way the collection, processing, usage, or request of personally identifiable information** from its users. It is the user’s responsibility to control, decide, and manage what personal information they will share when interfacing with the Internet Computer through SLY, as SLY doesn’t require any to function, request it in any way, or has access/control over it.
+Its usage **doesn’t imply in any way the collection, processing, usage, or request of personally identifiable information** from its users. It is the user’s responsibility to control, decide, and manage what personal information they will share when interfacing with the Internet Computer through Terabethia, as Terabethia doesn’t require any to function, request it in any way, or has access/control over it.
 
-Therefore, we will keep these privacy policies extra simple, because **they only apply to SLY's website and main communication/community channels (Discord, Email, Twitter)**, and we don’t process personal information in those spaces either.
+Therefore, we will keep these privacy policies extra simple, because **they only apply to Terabethia's website and main communication/community channels (Discord, Email, Twitter)**, and we don’t process personal information in those spaces either.
 
-## SLY & Personal Data
+## Terabethia & Personal Data
 
-We can simplify SLY's policies regarding personal information in three bullets:
+We can simplify Terabethia's policies regarding personal information in three bullets:
 
-1. SLY doesn’t collect, process, use, require or disclose personal information.
-2. SLY doesn’t have, or requires, access to personal information of any type.
-3. SLY doesn’t share or sell any type of personal information.
+1. Terabethia doesn’t collect, process, use, require or disclose personal information.
+2. Terabethia doesn’t have, or requires, access to personal information of any type.
+3. Terabethia doesn’t share or sell any type of personal information.
 
 ## Cookie Policy & Website Tracking
-SLY uses Plausible.io Analytics on its website. This analytics provider is privacy-oriented and doesn’t use cookies to provide for basic website usage and anonymous visit analytics. The information provided by this tracker is anonymous, not user-identifiable, and extremely basic (traffic, sources, device type, geography).
+Terabethia uses Plausible.io Analytics on its website. This analytics provider is privacy-oriented and doesn’t use cookies to provide for basic website usage and anonymous visit analytics. The information provided by this tracker is anonymous, not user-identifiable, and extremely basic (traffic, sources, device type, geography).
 
 ## Changes to our Privacy Policy
 Our privacy policy might be subject to minor changes in the future, which will be informed correspondingly on this page with an updated revision of the policy.

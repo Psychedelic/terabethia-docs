@@ -1,6 +1,6 @@
-# SLY's Documentation
+# Terabethia's Documentation
 
-Welcome [SLY's](https://sly.ooo/) documentation! The open internet service for code verification on the Internet Computer.
+Welcome [Terabethia's](https://terabethia.ooo/) documentation! A bridge between Ethereum and the Internet COmputer
 
 ## Getting started
 

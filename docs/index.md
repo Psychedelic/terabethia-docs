@@ -1,34 +1,32 @@
 ---
 date: "1"
 ---
-# Welcome to SLY
+# Welcome to Terabethia
 
-![](https://storageapi.fleek.co/fleek-team-bucket/logos/sly-metad.png)
+![](imgs/main.png)
 
-SLY is an open source, collaborative, and friendly CLI for developing on the Internet Computer. Providing abstractions, templates, and tools to kick-start and speed-up Internet Computer development.
+Terabethia is a bridge between Ethereum & the Internet Computer  that contracts in both chains can use to message each other, and that Ethereum assets (ERC20, ERC721, & ERC1155) can use to be automatically mirrored & used on the IC.
 
-- Visit [our website](https://sly.ooo)
-- Visit [SLY's repository](https://github.com/psychedelic/sly)
-- Follow [SLY on Twitter](https://twitter.com/sly_ooo) 
+- Visit [our website](https://terabethia.ooo)
+- Visit [SLY's repository](https://github.com/psychedelic/terabethia)
+- Follow [SLY on Twitter](https://twitter.com/terabethia_) 
 
 !!! Important
 
-    This is an early version of SLY ✨ and more features are in development, anyone is welcome to contribute to build a friendly CLI tool for the IC that helps provide templates, streamlined flows, and abstractions when it comes to canister development and more!
+    This is a Testnet version of Terabethia ✨ intended for testing, gathering developer feedback, and auditing as we move forward with the development needed for a mainnet release. Any developer can start building on Terabethia's testnet contracts to send messages between contracts across both chains. 
 
 
-## 🧰 Getting Started with SLY
+## 🧰 Getting Started with Terabethia's Testnet
 
-To get started with SLY, you visit our getting started section and **start by installing SLY** in your system. You can find different guides for SLY's use cases, as well as the different utility tools it provides, on the menu to the left or in this section below:
+To get started with Terabethia,  visit our getting started section! You can start using our testnet contracts and following our examples to get familiar with the usage and integration flow for Terabethia.
 
-1. [Install SLY](https://docs.sly.ooo/getting-started/installing-sly/)
-2. [Prepare a Project](https://docs.sly.ooo/getting-started/workspace-management/)
-3. [Create Local Replicas](https://docs.sly.ooo/getting-started/local-replicas/)
-4. [Manage Identities](https://docs.sly.ooo/getting-started/identity-management/)
-5. [Interact with Canisters](https://docs.sly.ooo/getting-started/interacting-with-canisters/)
+1. [Terabethia's Testnet Intro](https://docs.sly.ooo/getting-started/installing-sly/)
+2. [Sending Messages Across Chain](https://docs.sly.ooo/getting-started/workspace-management/)
+3. [Consuming Messages](https://docs.sly.ooo/getting-started/local-replicas/)
+4. [ETH & WETH Example](https://docs.sly.ooo/getting-started/identity-management/)
 
-### Utility Tools
+### Repositories
 
 There are several utility tools that SLY provides to help either abstract development flows of the IC, improve its performance, or help streamline it with examples and templates.
 
-1. [Candid Utility Tools](https://docs.sly.ooo/getting-started/candid-utility/)
-2. [WASM Optimizer](https://docs.sly.ooo/getting-started/wasm-optimizer/)
+1. [Terabethia Repository](https://github.com/psychedelic/terabethia)
