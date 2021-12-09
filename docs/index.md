@@ -8,8 +8,8 @@ date: "1"
 Terabethia is a bridge between Ethereum & the Internet Computer  that contracts in both chains can use to message each other, and that Ethereum assets (ERC20, ERC721, & ERC1155) can use to be automatically mirrored & used on the IC.
 
 - Visit [our website](https://terabethia.ooo)
-- Visit [SLY's repository](https://github.com/psychedelic/terabethia)
-- Follow [SLY on Twitter](https://twitter.com/terabethia_) 
+- Visit [our repository](https://github.com/psychedelic/terabethia)
+- Follow [us on Twitter](https://twitter.com/terabethia_) 
 
 !!! Important
 
