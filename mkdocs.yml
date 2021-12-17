@@ -26,8 +26,8 @@ nav:
   - Welcome to Terabethia 👋: index.md
   - <b>The Bridge's Testnet</b> 🌉: "#"
   - Getting Started: terabethia-testnet/getting-started.md
-  - Sending Messages: terabethia-testnet/getting-started.md
-  - Consuming Messages: terabethia-testnet/getting-started.md
+  # - Sending Messages: terabethia-testnet/getting-started.md
+  # - Consuming Messages: terabethia-testnet/getting-started.md
   - ETH<>WETH Example: terabethia-testnet/eth-weth.md
   - <b>Utility</b> 🧰: "#"
   - Terabethia Repo: "https://github.com/psychedelic/terabethia"
