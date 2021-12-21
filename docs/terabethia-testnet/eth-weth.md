@@ -12,7 +12,7 @@ As an example use-case and example implementation of Terabethia, we created Wrap
 
 It is a three-contract implementation. A proxy contract on Ethereum receives Goerli Ether deposits from a user, locks them, and sends a mint message to the Internet Computer by calling the Terabethia bridge contract.
 
-That message is sent to a WETH proxy canister on the IC that consumes the message and tells the WETH ([DIP20](https://github.com/Psychedelic/DIP20)) token canister to mint an equivalent amount of Wrapped Ethereum IC.
+That message is sent to a WETH proxy canister on the IC that consumes the message and tells the WETH ([DIP20](https://github.com/Psychedelic/DIP20)) token canister to mint an equivalent amount of Wrapped Ethereum on IC.
 
 Here's the repository of both IC-side contracts (proxy, and token):
 
