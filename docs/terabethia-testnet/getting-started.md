@@ -7,11 +7,11 @@ date: "1"
 
 Terabethia is based on L1 <> L2 messaging protocol from [Starknet](https://www.cairo-lang.org/docs/hello_starknet/l1l2.html). We support same way of sending/consuming messages between Ethereum and IC.
 
-To use Terabethia, you need to consider:
+To use Terabethia:
 
 - You need to have a pair of contracts (Ethereum and IC) which will send/consume messages
 - Consuming message received from Ethereum is triggered automatically on IC
-- Consuming message received from IC requires user interaction; we only store proof from L2 -> L1, therefore user needs to initiate the call trying to consume the message.
+- Consuming message received from IC requires user interaction; we only store proof from L2 -> L1, therefore user needs to initiate the call trying to consume the message
 
 ## Is it decentralised?
 Not yet. There's a plan for fully non-custodial setup which depends on [ECDSA Threshold signatures](https://forum.dfinity.org/t/threshold-ecdsa-signatures/6152).
@@ -22,11 +22,11 @@ Not yet. There's a plan for fully non-custodial setup which depends on [ECDSA Th
 
 Terabethia is currently deployed on Goerli Etherem network at address:
 
-- [0x7de702c6503bc03b5ebe00221f50af9330ca4c16](https://goerli.etherscan.io/address/0x7de702c6503bc03b5ebe00221f50af9330ca4c16#code). 
+- [0x7de702c6503bc03b5ebe00221f50af9330ca4c16](https://goerli.etherscan.io/address/0x7de702c6503bc03b5ebe00221f50af9330ca4c16#code)
 
 The IC canister is deployed on the IC's mainnet, and its canister ID is:
 
-- `s5qpg-tyaaa-aaaab-qad4a-cai`.
+- [s5qpg-tyaaa-aaaab-qad4a-cai](https://ic.rocks/principal/s5qpg-tyaaa-aaaab-qad4a-cai)
 
 ---
 
@@ -37,26 +37,26 @@ In terms of integrating and using Terabethia, the scope is simple. You have two 
 ### On Ethereum
 There are two methods available. First, **sendMessage** used to send a message/payload through the bridge to a destination canister on the Internet Computer. Here the address is a **Principal ID** in hex format.
 
-```
+```solidity
 sendMessage(uint256 to_address, uint256[] calldata payload) {} 
 ```
 
 Secondly, **consumeMessage** used by Ethereum contracts to manually initiate the call needed to consume a message received from the Internet Computer.
 
-```
+```solidity
 consumeMessage(uint256 from_address, uint256[] calldata payload) {}
 ```
 
 ### On the Internet Computer
 On the IC, the methods are the same. First, **sendMessage** used to send a message/payload through the bridge to a destination canister on the Internet Computer. Here the destination (to) is an Ethereum contract address as a Principal.
 
-```
+```rust
 send_message(to: Principal, payload: Vec<Nat>)
 ```
 
 Secondly, **consumeMessage** used by Ethereum contracts to manually initiate the call needed to consume a message received from the Internet Computer. Here, the from is an Ethereum contract address in hex string format.
 
-```
+```rust
 consume_message(from: Principal, payload: Vec<Nat>)
 ```
 

@@ -12,14 +12,13 @@ As an example use-case and example implementation of Terabethia, we created Wrap
 
 It is a three-contract implementation. A proxy contract on Ethereum receives Goerli Ether deposits from a user, locks them, and sends a mint message to the Internet Computer by calling the Terabethia bridge contract.
 
-That message is sent to a WETH proxy canister on the IC that consumes the message and tells the WETH token canister to mint an equivalent amount of Wrapped Ethereum on that network.
+That message is sent to a WETH proxy canister on the IC that consumes the message and tells the WETH ([DIP20](https://github.com/Psychedelic/DIP20)) token canister to mint an equivalent amount of Wrapped Ethereum IC.
 
 Here's the repository of both IC-side contracts (proxy, and token):
 
 - [WETH Proxy (IC)](https://github.com/Psychedelic/terabethia/blob/master/ic/w_eth/src/eth_proxy/src/lib.rs)
 - [WETH Proxy (ETH)](https://github.com/Psychedelic/terabethia/blob/master/eth/contracts/EthProxy.sol)
 - [WETH Token Contract (IC)](https://github.com/Psychedelic/terabethia/blob/master/ic/w_eth/src/token/token.did)
-
 
 ## Quick Flow Guide 🧰
 
@@ -31,16 +30,21 @@ Let's go through the flow of using the  proxy on Ethereum to mint WETH on the In
 
 ### 1) Deposit ETH in the Ethereum WETH Proxy Contract
 
+> Make sure you have Goerli ETH, get it from a faucet like https://faucet.goerli.mudit.blog/
+
 First, you need to deposit ETH to the WETH Proxy contract **on Ethereum**. The contract will lock your ETH, and call the WETH proxy contract on the IC through Terabethia to tell the WETH token contract to mint an equivalent balance.
 
 Do so by calling the following method, passing the destination Principal ID (address on the IC that will own the WETH balance).
 
-- ETH Proxy Contract address: `ad212312312312`
+- ETH Proxy Contract address: `0x1b864e1CA9189CFbD8A14a53A02E26B00AB5e91a`
 
-> Make sure you have Goerli ETH, get it from a faucet like https://faucet.goerli.mudit.blog/
+You can easily deposit by going to [WETH Proxy - Goerli](https://goerli.etherscan.io/address/0x1b864e1ca9189cfbd8a14a53a02e26b00ab5e91a#writeContract) etherscan:
 
-```
-code example of minting&depositing in proxy on eth?
+![Etherscan_example](../imgs/mint_etherscan.png)
+
+- ***NOTE:*** the `user` here is a Principal ID as hex.
+```js
+Principal.fromText('<PID_HERE').toHex().toLowerCase()
 ```
 
 **What is happening in the background?**
@@ -55,12 +59,12 @@ From the IC's side, Terabethia will receive the message, store it, and triggers 
 
 Now that you have minted WETH through the proxy contract on Ethereum, **let's check that you've received an equivalent minted balanced on the IC**!
 
-- WETH Token Contract Canister ID: `tq6li-4qaaa-aaaab-qad3q-cai`
+- WETH Token Contract Canister ID: `sbuvx-eyaaa-aaaab-qad6a-cai`
 
 You can check by calling the balanceOf method:
 
-```
-code example of balance method
+```sh
+dfx canister --network ic call sbuvx-eyaaa-aaaab-qad6a-cai balanceOf '(principal "<PID_HERE>")'
 ```
 
 Awesome! You have Goerli WETH on the Internet Computer, and can trade and use it on the IC's low-fee and fast transaction ecosystem.
@@ -71,15 +75,13 @@ But, what if you want to get your WETH turned back into ETH on Ethereum?
 
 Simple, you need to call WETH's burn function on the Internet Computer through the proxy, and set a destination address on Ethereum that will receive the unlocked funds on the Ethereum-side proxy contract.
 
-```
-code example of doing that
+```sh
+dfx canister --network ic call tcy4r-qaaaa-aaaab-qadyq-cai burn '(principal "<ETH_ADDRESS_AS_PID_HERE>", 2000:nat)'
 ```
 
 Then, **on Ethereum**, you can claim your ETH on the Ethereum Proxy contract.
 
-```
-code example of doing that
-```
+***TODO***
 
 
 **What is happening in the background?**
