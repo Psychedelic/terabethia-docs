@@ -29,7 +29,7 @@ Let's go through the flow of using the  proxy on Ethereum to mint WETH on the In
 
 --- 
 
-### Deposit ETH in the Ethereum WETH Proxy Contract
+### 1) Deposit ETH in the Ethereum WETH Proxy Contract
 
 First, you need to deposit ETH to the WETH Proxy contract **on Ethereum**. The contract will lock your ETH, and call the WETH proxy contract on the IC through Terabethia to tell the WETH token contract to mint an equivalent balance.
 
@@ -43,7 +43,15 @@ Do so by calling the following method, passing the destination Principal ID (add
 code example of minting&depositing in proxy on eth?
 ```
 
-### Check your WETH Balance on the Internet Computer
+**What is happening in the background?**
+
+Here, the proxy will call Terabethia's `sendMessage` method to pass on the mint instruction to the IC. Terabethia's serverless infrastructure picks it up to ensure there are no duplicate transactions, parses & validates the payload, and sends it to the IC.
+
+From the IC's side, Terabethia will receive the message, store it, and triggers the IC-side Proxy contract to reproduce the message and call the mint function on the WETH contract.
+
+----
+
+### 2) Check your WETH Balance on the Internet Computer
 
 Now that you have minted WETH through the proxy contract on Ethereum, **let's check that you've received an equivalent minted balanced on the IC**!
 
@@ -57,22 +65,23 @@ code example of balance method
 
 Awesome! You have Goerli WETH on the Internet Computer, and can trade and use it on the IC's low-fee and fast transaction ecosystem.
 
-### Burn Your WETH and Get ETH Back on Ethereum
-
-
+### 3) Burn Your WETH and Claim Your ETH Back on Ethereum
 
 But, what if you want to get your WETH turned back into ETH on Ethereum?
 
-Simple, you need to call WETH's burn function through the proxy, and set a destination address on Ethereum that will receive the unlocked funds on the Ethereum-side proxy contract.
+Simple, you need to call WETH's burn function on the Internet Computer through the proxy, and set a destination address on Ethereum that will receive the unlocked funds on the Ethereum-side proxy contract.
 
 ```
 code example of doing that
 ```
 
-### Claiming Your ETH
-
-Last but not least, you need to claim your ETH on the Ethereum Proxy contract.
+Then, **on Ethereum**, you can claim your ETH on the Ethereum Proxy contract.
 
 ```
 code example of doing that
 ```
+
+
+**What is happening in the background?**
+
+When you request to burn and withdraw. The IC-side of the proxy contract calls Terabethia's `send_message` method. The serverless infrastructure picks up the message, parses and validates it, then does an `updateState` on the Ethereum proxy contract informing the burning of the tokens, so that the user can reclaim/unlock their ETH.
