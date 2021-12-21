@@ -20,13 +20,6 @@ Terabethia is a bridge between Ethereum & the Internet Computer  that contracts 
 
 To get started with Terabethia,  visit our getting started section! You can start using our testnet contracts and following our examples to get familiar with the usage and integration flow for Terabethia.
 
-1. [Terabethia's Testnet Intro](https://docs.sly.ooo/getting-started/installing-sly/)
-2. [Sending Messages Across Chain](https://docs.sly.ooo/getting-started/workspace-management/)
-3. [Consuming Messages](https://docs.sly.ooo/getting-started/local-replicas/)
-4. [ETH & WETH Example](https://docs.sly.ooo/getting-started/identity-management/)
-
-### Repositories
-
-There are several utility tools that SLY provides to help either abstract development flows of the IC, improve its performance, or help streamline it with examples and templates.
-
-1. [Terabethia Repository](https://github.com/psychedelic/terabethia)
+1. [Terabethia's Testnet Intro](https://docs.terabethia.ooo/terabethia-testnet/getting-started/)
+2. [ETH & WETH Example](https://docs.terabethia.ooo/terabethia-testnet/eth-weth/)
+3. [Terabethia Repository](https://github.com/psychedelic/terabethia)
