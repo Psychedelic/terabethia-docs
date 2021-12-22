@@ -75,14 +75,21 @@ But, what if you want to get your WETH turned back into ETH on Ethereum?
 
 Simple, you need to call WETH's burn function on the Internet Computer through the proxy, and set a destination address on Ethereum that will receive the unlocked funds on the Ethereum-side proxy contract.
 
+Firstly, you need to give the ETH Proxy approval to burn your WETH:
+```sh
+dfx canister --network ic call sbuvx-eyaaa-aaaab-qad6a-cai approve '(principal "tcy4r-qaaaa-aaaab-qadyq-cai", 20000:nat)'
+```
+
+Secondly, call ETH Proxy burn method:
 ```sh
 dfx canister --network ic call tcy4r-qaaaa-aaaab-qadyq-cai burn '(principal "<ETH_ADDRESS_AS_PID_HERE>", 2000:nat)'
 ```
 
-Then, **on Ethereum**, you can claim your ETH on the Ethereum Proxy contract.
+Then, **on Ethereum**, you can claim your ETH on the Ethereum Proxy contract. Enter the amount in **WEI** Ethereum denomination.
 
-***TODO***
+Withdraw by going to [WETH Proxy - Goerli](https://goerli.etherscan.io/address/0x1b864e1ca9189cfbd8a14a53a02e26b00ab5e91a#writeContract) etherscan:
 
+![Etherscan_example](../imgs/withdraw_etherscan.png)
 
 **What is happening in the background?**
 
