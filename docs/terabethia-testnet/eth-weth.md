@@ -44,7 +44,9 @@ You can easily deposit by going to [WETH Proxy - Goerli](https://goerli.ethersca
 
 - ***NOTE:*** the `user` here is a Principal ID as hex.
 ```js
-Principal.fromText('<PID_HERE').toHex().toLowerCase()
+import { Principal } from '@dfinity/principal';
+
+const hexString = Principal.fromText('<PID_HERE>').toHex().toLowerCase();
 ```
 
 **What is happening in the background?**
@@ -83,6 +85,13 @@ dfx canister --network ic call sbuvx-eyaaa-aaaab-qad6a-cai approve '(principal "
 Secondly, call ETH Proxy burn method:
 ```sh
 dfx canister --network ic call tcy4r-qaaaa-aaaab-qadyq-cai burn '(principal "<ETH_ADDRESS_AS_PID_HERE>", 2000:nat)'
+```
+
+- ***NOTE:*** Generate Principal from Ethereum hex address, without `0x` prefix. 
+```js
+import { Principal } from '@dfinity/principal';
+
+const pid = Principal.fromHex("<ETH_ADDR_WIHOUT_HEX_PREFIX>").toText()
 ```
 
 Then, **on Ethereum**, you can claim your ETH on the Ethereum Proxy contract. Enter the amount in **WEI** Ethereum denomination.
