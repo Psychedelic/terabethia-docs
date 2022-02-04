@@ -13,7 +13,7 @@ Terabethia is a bridge between Ethereum & the Internet Computer  that contracts 
 
 !!! Important
 
-    This is a Testnet version of Terabethia ✨ intended for testing, gathering developer feedback, and auditing as we move forward with the development needed for a mainnet release. Any developer can start building on Terabethia's testnet contracts to send messages between contracts across both chains. 
+    This is a Testnet V2 version of Terabethia ✨ intended for testing, gathering developer feedback, and auditing as we move forward with the development needed for a mainnet release. Any developer can start building on Terabethia's testnet contracts to send messages between contracts across both chains. 
 
 
 ## 🧰 Getting Started with Terabethia's Testnet
