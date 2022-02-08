@@ -36,9 +36,9 @@ First, you need to deposit ETH to the WETH Proxy contract **on Ethereum**. The c
 
 Do so by calling the following method, passing the destination Principal ID (address on the IC that will own the WETH balance).
 
-- ETH Proxy Contract address: `0x1b864e1CA9189CFbD8A14a53A02E26B00AB5e91a`
+- ETH Proxy Contract address: `0x2E130E57021Bb4dfb95Eb4Dd0dD8CFCeB936148a`
 
-You can easily deposit by going to [WETH Proxy - Goerli](https://goerli.etherscan.io/address/0x1b864e1ca9189cfbd8a14a53a02e26b00ab5e91a#writeContract) etherscan:
+You can easily deposit by going to [WETH Proxy - Goerli](https://goerli.etherscan.io/address/0x2E130E57021Bb4dfb95Eb4Dd0dD8CFCeB936148a#writeContract) etherscan:
 
 ![Etherscan_example](../imgs/mint_etherscan.png)
 
@@ -61,12 +61,12 @@ From the IC's side, Terabethia will receive the message, store it, and triggers 
 
 Now that you have minted WETH through the proxy contract on Ethereum, **let's check that you've received an equivalent minted balanced on the IC**!
 
-- WETH Token Contract Canister ID: `sbuvx-eyaaa-aaaab-qad6a-cai`
+- WETH Token Contract Canister ID: `tgodh-faaaa-aaaab-qaefa-cai`
 
 You can check by calling the balanceOf method:
 
 ```sh
-dfx canister --network ic call sbuvx-eyaaa-aaaab-qad6a-cai balanceOf '(principal "<PID_HERE>")'
+dfx canister --network ic call tgodh-faaaa-aaaab-qaefa-cai balanceOf '(principal "<PID_HERE>")'
 ```
 
 Awesome! You have Goerli WETH on the Internet Computer, and can trade and use it on the IC's low-fee and fast transaction ecosystem.
@@ -79,12 +79,12 @@ Simple, you need to call WETH's burn function on the Internet Computer through t
 
 Firstly, you need to give the ETH Proxy approval to burn your WETH:
 ```sh
-dfx canister --network ic call sbuvx-eyaaa-aaaab-qad6a-cai approve '(principal "tcy4r-qaaaa-aaaab-qadyq-cai", 20000:nat)'
+dfx canister --network ic call tgodh-faaaa-aaaab-qaefa-cai approve '(principal "tpni3-tiaaa-aaaab-qaeeq-cai", 20000:nat)'
 ```
 
 Secondly, call ETH Proxy burn method:
 ```sh
-dfx canister --network ic call tcy4r-qaaaa-aaaab-qadyq-cai burn '(principal "<ETH_ADDRESS_AS_PID_HERE>", 2000:nat)'
+dfx canister --network ic call tpni3-tiaaa-aaaab-qaeeq-cai burn '(principal "<ETH_ADDRESS_AS_PID_HERE>", 2000:nat)'
 ```
 
 - ***NOTE:*** Generate Principal from Ethereum hex address, without `0x` prefix. 
@@ -96,7 +96,7 @@ const pid = Principal.fromHex("<ETH_ADDR_WIHOUT_HEX_PREFIX>").toText()
 
 Then, **on Ethereum**, you can claim your ETH on the Ethereum Proxy contract. Enter the amount in **WEI** Ethereum denomination.
 
-Withdraw by going to [WETH Proxy - Goerli](https://goerli.etherscan.io/address/0x1b864e1ca9189cfbd8a14a53a02e26b00ab5e91a#writeContract) etherscan:
+Withdraw by going to [WETH Proxy - Goerli](https://goerli.etherscan.io/address/0x2E130E57021Bb4dfb95Eb4Dd0dD8CFCeB936148a#writeContract) etherscan:
 
 ![Etherscan_example](../imgs/withdraw_etherscan.png)
 
