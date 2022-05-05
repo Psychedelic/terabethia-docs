@@ -16,9 +16,9 @@ That message is sent to a WETH proxy canister on the IC that consumes the messag
 
 Here's the repository of both IC-side contracts (proxy, and token):
 
-- [WETH Proxy (IC)](https://github.com/Psychedelic/terabethia/blob/master/ic/w_eth/src/eth_proxy/src/lib.rs)
-- [WETH Proxy (ETH)](https://github.com/Psychedelic/terabethia/blob/master/eth/contracts/EthProxy.sol)
-- [WETH Token Contract (IC)](https://github.com/Psychedelic/terabethia/blob/master/ic/w_eth/src/token/token.did)
+- [WETH Proxy (IC)](https://github.com/Psychedelic/terabethia/tree/master/eth_bridge/ic)
+- [WETH Proxy (ETH)](https://github.com/Psychedelic/terabethia/tree/master/eth_bridge/eth)
+- [WETH Token Canister (IC)](https://github.com/Psychedelic/terabethia/tree/master/eth_bridge/ic/src/weth)
 
 ## Quick Flow Guide 🧰
 
