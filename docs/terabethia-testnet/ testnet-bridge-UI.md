@@ -1,6 +1,8 @@
 You can currently swap three main tokens between Ethereum and the IC: ETH, wETH, and USDC, but will be able to do so for any ERC-20 token once we expand Terabethia’s bridging functionality in subsequent releases.
 
-Head over to [link] and follow the steps below to start bridging your tokens.
+Head over to [link] and follow the steps below to start bridging your tokens. For Goerli testnet ETH, head over to the link below and follow the step-by-step guide.
+
+  * [Get Goerli ETH](https://goerlifaucet.com/)
 
 ## Ethereum > IC
 **Connect your Metamask** or WalletConnect-supported wallets, **and your Plug account** & choose the blockchain you want to bridge your token to. With only two networks available, the blockchain destination field will automatically flip when switching between Ethereum and the IC.
