@@ -1,4 +1,4 @@
-You can currently swap three main tokens between Ethereum and the IC: ETH, wETH, and USDC, but will be able to do so for any ERC-20 token once we expand Terabethia’s bridging functionality in the next release.
+You can currently swap three main tokens between Ethereum and the IC: ETH, wETH, and USDC, but will be able to do so for any ERC-20 token once we expand Terabethia’s bridging functionality in subsequent releases.
 
 Head over to [link] and follow the steps below to start bridging your tokens.
 
@@ -66,6 +66,7 @@ Under the “**Claimable Assets**” tab, select your partially bridged tokens a
 You will be prompted to another screen where you will see the token and amount selected. **Click “Withdraw” again** in order to **confirm the bridging transaction**.
 
 - ***Note:***  In this release **you cannot partially withdraw an asset**! Each claimable asset instance must be withdrawn in full or not at all.
+- The transaction verification time may take some time while on testnet. You can return in a few minutes to claim your assets.
 
 ![](../imgs/withdraw-step-2.png)
 
