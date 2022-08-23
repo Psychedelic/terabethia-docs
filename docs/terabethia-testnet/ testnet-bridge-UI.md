@@ -1,6 +1,6 @@
 You can currently swap three main tokens between Ethereum and the IC: ETH, wETH, and USDC, but will be able to do so for any ERC-20 token once we expand Terabethia’s bridging functionality in subsequent releases.
 
-Head over to [link] and follow the steps below to start bridging your tokens. For Goerli testnet ETH, head over to the link below and follow the step-by-step guide.
+Head over to https://testnet.terabethia.ooo/ and follow the steps below to start bridging your tokens. For Goerli testnet ETH, head over to the link below and follow the step-by-step guide.
 
   * [Get Goerli ETH](https://goerlifaucet.com/)
 
@@ -35,7 +35,8 @@ While in the backend token bridging goes through a two-step process, you only ne
 You have now successfully bridged your tokens!
 
 - ***Note:*** To see your bridged DIP-20 standard tokens in Plug, you need to add wETH or USDC as custom tokens in your wallet by selecting DIP-20 as the token standard and the corresponding canister ID. A pop-up will then appear to auto import the token into Plug.
-&nbsp
+
+
 
 
 ## IC > Ethereum
