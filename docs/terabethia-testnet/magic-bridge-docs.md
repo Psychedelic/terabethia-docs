@@ -41,7 +41,7 @@ To start bridging your ERC20 assets:
     <aside>
     🔗 ERC20Bridge Contract    
     
-    [0x8CA1651eadeF97D3aC36c25DAE4A552c1368F27d](https://goerli.etherscan.io/address/0x15b661f6d3fd9a7ed8ed4c88bccfd1546644443f)
+    [0x8CA1651eadeF97D3aC36c25DAE4A552c1368F27d](https://goerli.etherscan.io/address/0x8CA1651eadeF97D3aC36c25DAE4A552c1368F27d)
 
     DIP20Bridge Canister
     `767da-lqaaa-aaaab-qafka-cai`
@@ -120,7 +120,7 @@ To start bridging your ERC20 assets:
     `767da-lqaaa-aaaab-qafka-cai`
     
     ERC20Bridge Contract
-    [`0x8CA1651eadeF97D3aC36c25DAE4A552c1368F27d`](https://goerli.etherscan.io/address/0x15b661f6d3fd9a7ed8ed4c88bccfd1546644443f)
+    [`0x8CA1651eadeF97D3aC36c25DAE4A552c1368F27d`](https://goerli.etherscan.io/address/0x8CA1651eadeF97D3aC36c25DAE4A552c1368F27d)
     
     </aside>
     
@@ -198,7 +198,7 @@ Our hope is that native ETH integration will work seamlessly with existing canis
 - ETH
     - Goerli Terabethia - [`0x60DC1a1FD50F1cdA1D44dFf69Cec3E5C065417e8`](https://goerli.etherscan.io/address/0x60DC1a1FD50F1cdA1D44dFf69Cec3E5C065417e8)
     - Goerli EthProxy - [`0x2E130E57021Bb4dfb95Eb4Dd0dD8CFCeB936148a`](https://goerli.etherscan.io/address/0x2E130E57021Bb4dfb95Eb4Dd0dD8CFCeB936148a)
-    - Goerli ERC20Bridge: [`0x8CA1651eadeF97D3aC36c25DAE4A552c1368F27d`](https://goerli.etherscan.io/address/0x15b661f6d3fd9a7ed8ed4c88bccfd1546644443f)
+    - Goerli ERC20Bridge: [`0x8CA1651eadeF97D3aC36c25DAE4A552c1368F27d`](https://goerli.etherscan.io/address/0x8CA1651eadeF97D3aC36c25DAE4A552c1368F27d)
 - IC
     - Testnet Terabethia - `timop-6qaaa-aaaab-qaeea-cai`
     - Testnet DIP20Bridge:  `767da-lqaaa-aaaab-qafka-cai`
