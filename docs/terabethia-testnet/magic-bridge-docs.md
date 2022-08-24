@@ -27,7 +27,7 @@ The burn flow is very similar to our previous release with the `WETHProxy`, wher
 
 ### ERC721 → DIP721
 
-We are only a quarter away from a full support for the full range of token types. Now that we have proved that `ERC20 -> DIP20`, it is straightforward to tackle support for NFTs. The same approach will be used where we will have mirror contract/canisters on each chain and be able to send a messages using Terabethia layer. The factory and bridge for `DIP72` has already started, you can check out the repo.
+We are only a quarter away from a full support for the full range of token types. Now that we have proved that `ERC20 -> DIP20`, it is straightforward to tackle support for NFTs. The same approach will be used where we will have mirror contract/canisters on each chain and be able to send a messages using Terabethia layer. The factory and bridge for `DIP721` has already started, you can check out the repo.
 
 ---
 
