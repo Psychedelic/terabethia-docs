@@ -33,9 +33,8 @@ We are only a quarter away from a full support for the full range of token types
 
 ### Example: ERC20 → DIP20 and back
 
-We are actively working on a the Bridge UI that will make all these interactions seamless. For now try it out with these commands below. We have maintained a similar flow to the current setup of WETH. 
 
-So to start bridging your ERC20 assets:
+To start bridging your ERC20 assets:
 
 - Deposit L1 → L2
     
