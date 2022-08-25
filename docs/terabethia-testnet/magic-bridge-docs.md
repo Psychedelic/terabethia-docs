@@ -5,24 +5,16 @@ To understand how the bridging works refer to our previous [article](https://med
 
 We start on L1 with a new contract `ERC20Brdige` responsible for passing ERC-20 metadata in a message, which includes:  
 
-```
-
+```shell
 token // address of the ERC20
-
 user // owner of the tokens
-
 amount // the amount we send over
-
 tokenName // the name of the ERC20
-
 tokenSymbol // the symbol of the ERC20
-
 decimalds // the decimals of the ERC20
-
 ```
 
 The message then gets sent to our Terabethia canister on the IC to be processed, just like any other message. End users would only need to provide the token address, amount, and their wallet address. Everything else is pulled from the chain.
-
 
 ### ETH → IC
 Once the message lands on the Terabethia IC canister, we send the message to the `DIP20Bridge`, which handles the message and verifies the origin Ethereum contract. Additionally, using our `MagicFactory`, the bridge checks if the origin ETH address has a corresponding pair canister. This is the mirror address which will handle all the transactions for this specific origin ETH address. If one such pair canister does not exist, it will create one using the metadata in the message and assign it 1-1 to the origin address. From there we can mint the incoming transaction within the corresponding canister `eth address -> canister_id` for `user`.
@@ -165,7 +157,6 @@ dfx canister --network ic call dip20_proxy burn "(
     ![](../imgs/Magic-address.png)
 
 ***Noice! Now you have back your ERC20***
-
 
 #### Manual Replays (WIP)
 Outside of normal operation there might be instances where some of the calls on the IC will partially succeed because of the asynchronous behaviour. We have built methods in to help you navigate in case of partial failures. We will continue to refine the UX after the release of our Bridge UI.
